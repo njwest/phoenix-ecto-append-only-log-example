@@ -3,7 +3,7 @@ defmodule Append.Repo.Migrations.AddEntryId do
 
   def change do
     alter table("addresses") do
-      add :entry_id, :string
+      add :entry_id, :uuid
     end
 
   end

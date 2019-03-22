@@ -11,7 +11,7 @@ defmodule Append.Address do
     field(:name, :string)
     field(:postcode, :string)
     field(:tel, :string)
-    field(:entry_id, :string)
+    field(:entry_id, Ecto.UUID)
     field(:deleted, :boolean, default: false)
 
     timestamps()
